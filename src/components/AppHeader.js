@@ -19,9 +19,10 @@ const styles = StyleSheet.create({
     title: {
         marginTop: 40,
         textAlign: 'center',
-        fontSize: 20,
+        fontSize: 48,
+
         color: Platform.OS === 'ios' ? '#72bcd4' : '#ffffff',
-        fontWeight: Platform.OS === 'ios' ? 'normal' : 'bold'
+        fontFamily: Platform.OS == 'ios' ? 'TeX-Gyre-Adventor' : 'TeX-Gyre-Adventor-Bold'
     }
 })
 
