@@ -27,10 +27,15 @@ export default function App() {
     return null;
   }
   return (
-    <View onLayout={onLayoutRootView}>
-      <AppHeader />
-      <Text style={styles.welcomeText}>Welcome to the Bible Essentials Podcast!</Text>
-      <Text style={styles.aboutText}>This podcast is meant to help you understand the Bible in a much simpler way.</Text>
+    <View>
+      <View onLayout={onLayoutRootView}>
+        <AppHeader />
+        <Text style={styles.welcomeText}>Welcome to the Bible Essentials Podcast!</Text>
+        <Text style={styles.aboutText}>This podcast is meant to help you understand the Bible in a much simpler way.</Text>
+      </View>
+      <View>
+        {/* This view will hold all the episodes of the podcast */}
+      </View>
     </View>
   );
 }
